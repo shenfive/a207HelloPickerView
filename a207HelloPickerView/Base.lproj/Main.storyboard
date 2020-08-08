@@ -32,7 +32,7 @@
                     </view>
                     <connections>
                         <outlet property="thePickerView" destination="46l-Ij-4qe" id="4oj-QK-2so"/>
-                        <segue destination="io5-NO-CHy" kind="show" identifier="goNextPage" id="oCE-Fd-kOZ"/>
+                        <segue destination="Mj9-AN-gyw" kind="show" identifier="goPage2" id="OoE-9O-vVm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -40,20 +40,20 @@
             <point key="canvasLocation" x="132" y="99"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="YrF-vO-Gdz">
+        <scene sceneID="JNB-7e-3Eg">
             <objects>
-                <viewController id="io5-NO-CHy" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="T6u-bB-IfA">
+                <viewController id="Mj9-AN-gyw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dEp-ny-OQU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="YE6-gU-jHV"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Fe8-OL-fuO"/>
                     </view>
-                    <navigationItem key="navigationItem" id="zCQ-cz-7fl"/>
+                    <navigationItem key="navigationItem" id="qTY-ff-9z3"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ohu-V3-ZHp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W0t-5q-pzd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1161" y="98"/>
+            <point key="canvasLocation" x="1300" y="95"/>
         </scene>
     </scenes>
 </document>
