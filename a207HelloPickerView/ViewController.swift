@@ -49,15 +49,10 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        switch component {
-        case 0:
-            print(bloudType[row])
-        case 1:
-            print(astrological[row])
-        default:
-            break
+        if pickerView.selectedRow(inComponent: 0) != 0
+            && pickerView.selectedRow(inComponent: 1) != 0 {
+            performSegue(withIdentifier: "goPage2", sender: nil)
         }
-        performSegue(withIdentifier: "goPage2", sender: nil)
     }
     
     
