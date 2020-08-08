@@ -48,6 +48,18 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
         }
     }
     
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        switch component {
+        case 0:
+            print(bloudType[row])
+        case 1:
+            print(astrological[row])
+        default:
+            break
+        }
+    }
+    
+    
     
 }
 
