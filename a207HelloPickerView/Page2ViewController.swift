@@ -12,13 +12,12 @@ class Page2ViewController: UIViewController {
 
     @IBOutlet weak var showLabel: UILabel!
     
-    var selected = ""
+    var sorcePage:ViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(selected)
-        showLabel.text = selected
-        // Do any additional setup after loading the view.
+
+        showLabel.text = sorcePage.selectedPageOne
     }
 
 

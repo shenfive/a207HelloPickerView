@@ -25,22 +25,15 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print(segue.identifier)
         switch segue.identifier {
         case "goPage2":
-            let nextVC = segue.destination as? Page2ViewController
-            nextVC?.selected = self.selectedPageOne
-            
-            
+            if let nextVC = segue.destination as? Page2ViewController{
+                nextVC.sorcePage = self
+            }
         default:
             break
         }
-        
-        
-        
     }
-    
-    
     
     //MARK: PickerView Delegate & DataSource
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
