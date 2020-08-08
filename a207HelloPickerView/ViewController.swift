@@ -13,6 +13,8 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
     
     var astrological = ["請選擇你的星座","白羊宮","金牛宮","雙子宮","巨蟹宮","獅子宮","處女宮","天秤宮","天蠍宮","射手宮","摩羯宮","水瓶宮","雙魚宮"]
     var bloudType = ["請選擇你的血型","A","B","O","AB"]
+    var selectedPageOne = ""
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,26 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
         thePickerView.delegate = self
         
     }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print(segue.identifier)
+        switch segue.identifier {
+        case "goPage2":
+            let nextVC = segue.destination as? Page2ViewController
+            nextVC?.selected = self.selectedPageOne
+            
+            
+        default:
+            break
+        }
+        
+        
+        
+    }
+    
+    
+    
     //MARK: PickerView Delegate & DataSource
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 2
@@ -49,6 +71,9 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        selectedPageOne = bloudType[pickerView.selectedRow(inComponent: 0)]
+            + astrological[pickerView.selectedRow(inComponent: 1)]
+        
         if pickerView.selectedRow(inComponent: 0) != 0
             && pickerView.selectedRow(inComponent: 1) != 0 {
             performSegue(withIdentifier: "goPage2", sender: nil)

@@ -47,10 +47,25 @@
                     <view key="view" contentMode="scaleToFill" id="dEp-ny-OQU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxx-QF-vte">
+                                <rect key="frame" x="134" y="410" width="146" height="76"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="63"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kxx-QF-vte" firstAttribute="centerY" secondItem="dEp-ny-OQU" secondAttribute="centerY" id="dm0-vM-bt7"/>
+                            <constraint firstItem="kxx-QF-vte" firstAttribute="centerX" secondItem="dEp-ny-OQU" secondAttribute="centerX" id="uJz-s3-p8Q"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Fe8-OL-fuO"/>
                     </view>
                     <navigationItem key="navigationItem" id="qTY-ff-9z3"/>
+                    <connections>
+                        <outlet property="showLabel" destination="kxx-QF-vte" id="9tK-w4-uOw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W0t-5q-pzd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
