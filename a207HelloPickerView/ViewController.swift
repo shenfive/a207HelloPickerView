@@ -57,6 +57,7 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
         default:
             break
         }
+        performSegue(withIdentifier: "goNextPage", sender: nil)
     }
     
     
